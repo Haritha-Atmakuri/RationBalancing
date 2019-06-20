@@ -23,7 +23,6 @@ class MasterTableViewController: UITableViewController {
     ]
     var selectIngredients:[String] = []
     override func viewDidLoad() {
-        
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         //        navigationItem.leftBarButtonItem = editButtonItem
@@ -44,10 +43,7 @@ class MasterTableViewController: UITableViewController {
         tableView.reloadData()
     }
     
-    
-    
     // MARK: - Segues
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showDetail" {
             if let indexPath = tableView.indexPathForSelectedRow {

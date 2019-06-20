@@ -20,6 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
         let splitViewController = tabCtrl.viewControllers![2] as! UISplitViewController
         //let splitViewController = window!.rootViewController as! UISplitViewController
         splitViewController.preferredDisplayMode = .allVisible
+        //splitViewController.view.backgroundColor = UIColor(patternImage: UIImage(named: "barrelu")!);
         //        let navigationController = splitViewController.viewControllers[splitViewController.viewControllers.count-1] as! UINavigationController
         //        navigationController.topViewController!.navigationItem.leftBarButtonItem = splitViewController.displayModeButtonItem
         splitViewController.delegate = self
