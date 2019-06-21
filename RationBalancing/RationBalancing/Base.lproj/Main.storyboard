@@ -138,7 +138,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="665" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eOg-qb-Nbd">
+                                                <textField opaque="NO" tag="100" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eOg-qb-Nbd">
                                                     <rect key="frame" x="284" y="6" width="366" height="30"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <nil key="textColor"/>
@@ -146,6 +146,14 @@
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                             </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Result" id="wFj-Bk-EqM">
+                                        <rect key="frame" x="0.0" y="72" width="665" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wFj-Bk-EqM" id="ZPs-x3-b5W">
+                                            <rect key="frame" x="0.0" y="0.0" width="665" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
@@ -159,6 +167,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Calculate"/>
+                                <connections>
+                                    <action selector="calculateRation:" destination="5ZV-Xb-L5M" eventType="touchUpInside" id="dYp-gb-bAH"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -226,7 +237,7 @@
                             <outlet property="delegate" destination="ECL-Jc-yXt" id="kCr-xx-Ems"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Select Ingredients" id="0uK-Jr-qIo"/>
+                    <navigationItem key="navigationItem" id="0uK-Jr-qIo"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eDh-Ec-ysr" sceneMemberID="firstResponder"/>
             </objects>

@@ -16,14 +16,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        let tabCtrl = window!.rootViewController as! UITabBarController
-        let splitViewController = tabCtrl.viewControllers![2] as! UISplitViewController
         //let splitViewController = window!.rootViewController as! UISplitViewController
+        let tableCtrl = window!.rootViewController as! UITabBarController
+        let splitViewController = tableCtrl.viewControllers![2] as! UISplitViewController
         splitViewController.preferredDisplayMode = .allVisible
+        splitViewController.delegate = self
+        var searchbar = UISearchController(searchResultsController: splitViewController)
+        
         //splitViewController.view.backgroundColor = UIColor(patternImage: UIImage(named: "barrelu")!);
         //        let navigationController = splitViewController.viewControllers[splitViewController.viewControllers.count-1] as! UINavigationController
         //        navigationController.topViewController!.navigationItem.leftBarButtonItem = splitViewController.displayModeButtonItem
-        splitViewController.delegate = self
         return true
     }
 

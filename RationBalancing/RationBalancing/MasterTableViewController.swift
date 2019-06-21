@@ -22,12 +22,16 @@ class MasterTableViewController: UITableViewController {
         "Wheat"
     ]
     var selectIngredients:[String] = []
+    
+    lazy   var searchBar:UISearchBar = UISearchBar(frame: CGRect(x: 0, y: 0, width: 200, height: 200))
     override func viewDidLoad() {
+        searchBar.placeholder = "Select Ingredients"
+        let leftNavBarButton = UIBarButtonItem(customView:searchBar)
+        self.navigationItem.leftBarButtonItem = leftNavBarButton
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         //        navigationItem.leftBarButtonItem = editButtonItem
         self.tableView.allowsMultipleSelection = true
-        //        let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action:             #selector(insertNewObject(_:)))
+        //        let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action:                 #selector(insertNewObject(_:)))
         //        navigationItem.rightBarButtonItem = addButton
         if let split = splitViewController {
             let controllers = split.viewControllers
@@ -69,14 +73,11 @@ class MasterTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        
-        
         cell.textLabel!.text = ingredients[indexPath.row]
         return cell
     }
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let cell = tableView.cellForRow(at: indexPath)
-        
         if cell!.isSelected
         {
             cell!.isSelected = false
@@ -96,7 +97,6 @@ class MasterTableViewController: UITableViewController {
             }
         }
     }
-    
     
     //    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
     //        // Return false if you do not want the specified item to be editable.
