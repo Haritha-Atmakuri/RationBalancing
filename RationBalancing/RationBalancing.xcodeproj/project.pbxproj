@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		3F5BA1B022BBDC9C004CA69A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5BA1AF22BBDC9C004CA69A /* AppDelegate.swift */; };
-		3F5BA1B222BBDC9C004CA69A /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5BA1B122BBDC9C004CA69A /* FirstViewController.swift */; };
-		3F5BA1B422BBDC9C004CA69A /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5BA1B322BBDC9C004CA69A /* SecondViewController.swift */; };
+		3F5BA1B222BBDC9C004CA69A /* CattleCategoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5BA1B122BBDC9C004CA69A /* CattleCategoryController.swift */; };
+		3F5BA1B422BBDC9C004CA69A /* EditNutrientsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5BA1B322BBDC9C004CA69A /* EditNutrientsController.swift */; };
 		3F5BA1B722BBDC9C004CA69A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F5BA1B522BBDC9C004CA69A /* Main.storyboard */; };
 		3F5BA1B922BBDC9E004CA69A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F5BA1B822BBDC9E004CA69A /* Assets.xcassets */; };
 		3F5BA1BC22BBDC9E004CA69A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F5BA1BA22BBDC9E004CA69A /* LaunchScreen.storyboard */; };
@@ -17,6 +17,10 @@
 		3F5BA1D222BBDC9F004CA69A /* RationBalancingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5BA1D122BBDC9F004CA69A /* RationBalancingUITests.swift */; };
 		3F5BA1E022BBDF69004CA69A /* MasterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5BA1DF22BBDF69004CA69A /* MasterTableViewController.swift */; };
 		3F5BA1E222BBDFB3004CA69A /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5BA1E122BBDFB3004CA69A /* DetailViewController.swift */; };
+		3F65F55B22BF3E9A0053FE0B /* RationTableCellDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F65F55A22BF3E9A0053FE0B /* RationTableCellDetails.swift */; };
+		3F65F55D22C12FE70053FE0B /* FoodStuffModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F65F55C22C12FE70053FE0B /* FoodStuffModel.swift */; };
+		3F65F55F22C140690053FE0B /* SliderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F65F55E22C140690053FE0B /* SliderTableViewCell.swift */; };
+		3FBD647122BF3900000F004B /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBD647022BF3900000F004B /* HelpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +43,8 @@
 /* Begin PBXFileReference section */
 		3F5BA1AC22BBDC9C004CA69A /* RationBalancing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RationBalancing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F5BA1AF22BBDC9C004CA69A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3F5BA1B122BBDC9C004CA69A /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		3F5BA1B322BBDC9C004CA69A /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		3F5BA1B122BBDC9C004CA69A /* CattleCategoryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CattleCategoryController.swift; sourceTree = "<group>"; };
+		3F5BA1B322BBDC9C004CA69A /* EditNutrientsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditNutrientsController.swift; sourceTree = "<group>"; };
 		3F5BA1B622BBDC9C004CA69A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3F5BA1B822BBDC9E004CA69A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F5BA1BB22BBDC9E004CA69A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -53,6 +57,10 @@
 		3F5BA1D322BBDC9F004CA69A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F5BA1DF22BBDF69004CA69A /* MasterTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterTableViewController.swift; sourceTree = "<group>"; };
 		3F5BA1E122BBDFB3004CA69A /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		3F65F55A22BF3E9A0053FE0B /* RationTableCellDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RationTableCellDetails.swift; sourceTree = "<group>"; };
+		3F65F55C22C12FE70053FE0B /* FoodStuffModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodStuffModel.swift; sourceTree = "<group>"; };
+		3F65F55E22C140690053FE0B /* SliderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderTableViewCell.swift; sourceTree = "<group>"; };
+		3FBD647022BF3900000F004B /* HelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,14 +112,18 @@
 			isa = PBXGroup;
 			children = (
 				3F5BA1AF22BBDC9C004CA69A /* AppDelegate.swift */,
-				3F5BA1B122BBDC9C004CA69A /* FirstViewController.swift */,
-				3F5BA1B322BBDC9C004CA69A /* SecondViewController.swift */,
+				3F5BA1B122BBDC9C004CA69A /* CattleCategoryController.swift */,
+				3F5BA1B322BBDC9C004CA69A /* EditNutrientsController.swift */,
 				3F5BA1B522BBDC9C004CA69A /* Main.storyboard */,
+				3F65F55C22C12FE70053FE0B /* FoodStuffModel.swift */,
 				3F5BA1B822BBDC9E004CA69A /* Assets.xcassets */,
 				3F5BA1BA22BBDC9E004CA69A /* LaunchScreen.storyboard */,
 				3F5BA1BD22BBDC9E004CA69A /* Info.plist */,
 				3F5BA1DF22BBDF69004CA69A /* MasterTableViewController.swift */,
 				3F5BA1E122BBDFB3004CA69A /* DetailViewController.swift */,
+				3FBD647022BF3900000F004B /* HelpViewController.swift */,
+				3F65F55A22BF3E9A0053FE0B /* RationTableCellDetails.swift */,
+				3F65F55E22C140690053FE0B /* SliderTableViewCell.swift */,
 			);
 			path = RationBalancing;
 			sourceTree = "<group>";
@@ -265,11 +277,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F5BA1B422BBDC9C004CA69A /* SecondViewController.swift in Sources */,
+				3F65F55D22C12FE70053FE0B /* FoodStuffModel.swift in Sources */,
+				3F5BA1B422BBDC9C004CA69A /* EditNutrientsController.swift in Sources */,
+				3FBD647122BF3900000F004B /* HelpViewController.swift in Sources */,
 				3F5BA1E022BBDF69004CA69A /* MasterTableViewController.swift in Sources */,
+				3F65F55F22C140690053FE0B /* SliderTableViewCell.swift in Sources */,
 				3F5BA1E222BBDFB3004CA69A /* DetailViewController.swift in Sources */,
+				3F65F55B22BF3E9A0053FE0B /* RationTableCellDetails.swift in Sources */,
 				3F5BA1B022BBDC9C004CA69A /* AppDelegate.swift in Sources */,
-				3F5BA1B222BBDC9C004CA69A /* FirstViewController.swift in Sources */,
+				3F5BA1B222BBDC9C004CA69A /* CattleCategoryController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

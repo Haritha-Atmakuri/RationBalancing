@@ -12,16 +12,17 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
 
     static var selectedIngredients:[String] = []
     var rationValues:[Double] = []
+    var inkypinky:[String] = []
+    @IBOutlet weak var tableView: UITableView!
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 2
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int)-> String? {
-            return ["SELECTED INGREDIENTS", "RESULT"][section]
+        return ["SELECTED INGREDIENTS", "RESULT"][section]
     }
     
-    @IBOutlet weak var tableView: UITableView!
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if section == 0{
         return DetailViewController.selectedIngredients.count
@@ -33,7 +34,7 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.section == 0{
-        let cell = tableView.dequeueReusableCell(withIdentifier: "SelectedIngredients", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "SelectedIngredients", for: indexPath) as! RationTableCellDetails
         cell.textLabel!.text = DetailViewController.selectedIngredients[indexPath.row]
         return cell
         }
@@ -55,9 +56,15 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
 
 
-    @IBAction func calculateRation(_ sender: Any) {
-        let indexPath = IndexPath(row: 0, section: 0)
-        let cell = tableView.cellForRow(at: indexPath)
-        print("The value is:",cell?.textLabel?.text! ?? "No input")
-    }
+//    @IBAction func calculateRation(_ sender: Any) {
+////        let indexPath = IndexPath(row: 0, section: 0)
+////        let cell = tableView.cellForRow(at: indexPath)
+////        print("The value is:",cell?.textLabel?.text! ?? "No input")
+//        for i in 0 ..< self.tableView.numberOfRows(inSection: 0){
+//            let cell: RationTableCellDetails = self.tableView.cellForRow(at: IndexPath(row: i, section: 0)) as! RationTableCellDetails
+//            self.inkypinky.append( cell.inputTF.text! )
+//
+//        }
+//        print(inkypinky)
+//    }
 }

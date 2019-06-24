@@ -22,6 +22,7 @@ class MasterTableViewController: UITableViewController {
         "Wheat"
     ]
     var selectIngredients:[String] = []
+    let sections = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
     
     lazy   var searchBar:UISearchBar = UISearchBar(frame: CGRect(x: 0, y: 0, width: 200, height: 200))
     override func viewDidLoad() {
@@ -71,11 +72,31 @@ class MasterTableViewController: UITableViewController {
         return ingredients.count
     }
     
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int{
+        return 26
+    }
+    
+    
+    func sectionIndexTitlesForTableView(tableView: UITableView) -> [AnyObject]!{
+        return self.sections as [AnyObject]
+    }
+    
+    func tableView(tableView: UITableView, sectionForSectionIndexTitle title: String,
+atIndex index: Int) -> Int{
+        return index
+    }
+    
+    func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String?{
+        return self.sections[section]
+    }
+    
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         cell.textLabel!.text = ingredients[indexPath.row]
         return cell
     }
+    
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let cell = tableView.cellForRow(at: indexPath)
         if cell!.isSelected
