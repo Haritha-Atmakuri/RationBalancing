@@ -56,15 +56,15 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
 
 
-//    @IBAction func calculateRation(_ sender: Any) {
-////        let indexPath = IndexPath(row: 0, section: 0)
-////        let cell = tableView.cellForRow(at: indexPath)
-////        print("The value is:",cell?.textLabel?.text! ?? "No input")
-//        for i in 0 ..< self.tableView.numberOfRows(inSection: 0){
-//            let cell: RationTableCellDetails = self.tableView.cellForRow(at: IndexPath(row: i, section: 0)) as! RationTableCellDetails
-//            self.cellValues.append( cell.inputTF.text! )
-//
-//        }
-//        print(cellValues)
-//    }
+    @IBAction func calculateRation(_ sender: Any) {
+//        let indexPath = IndexPath(row: 0, section: 0)
+//        let cell = tableView.cellForRow(at: indexPath)
+//        print("The value is:",cell?.textLabel?.text! ?? "No input")
+        for i in 0 ..< self.tableView.numberOfRows(inSection: 0){
+            let cell: RationTableCellDetails = self.tableView.cellForRow(at: IndexPath(row: i, section: 0)) as! RationTableCellDetails
+            self.cellValues.append( cell.inputTF.text! )
+
+        }
+        print(cellValues)
+    }
 }
