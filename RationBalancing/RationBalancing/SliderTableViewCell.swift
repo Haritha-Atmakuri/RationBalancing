@@ -9,7 +9,7 @@
 import UIKit
 
 class SliderTableViewCell: UITableViewCell {
-//
+
 //    @IBOutlet weak var nutrientLabel: UILabel!
 //    @IBOutlet weak var cellSlider1: UISlider!
 //    @IBOutlet weak var cellSlider2: UISlider!

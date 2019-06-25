@@ -8,7 +8,17 @@
 
 import Foundation
 
-
+class Nutrients{
+    var name:String
+    var minValue:Float
+    var maxValue:Float
+    
+    init(name:String,minValue:Float,maxValue:Float){
+        self.name = name
+        self.minValue = minValue
+        self.maxValue = maxValue
+    }
+}
 
 struct Ingredient {
     var name:String

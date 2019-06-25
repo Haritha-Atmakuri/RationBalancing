@@ -12,7 +12,7 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
 
     static var selectedIngredients:[String] = []
     var rationValues:[Double] = []
-    var inkypinky:[String] = []
+    var cellValues:[String] = []
     @IBOutlet weak var tableView: UITableView!
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -62,9 +62,9 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
 ////        print("The value is:",cell?.textLabel?.text! ?? "No input")
 //        for i in 0 ..< self.tableView.numberOfRows(inSection: 0){
 //            let cell: RationTableCellDetails = self.tableView.cellForRow(at: IndexPath(row: i, section: 0)) as! RationTableCellDetails
-//            self.inkypinky.append( cell.inputTF.text! )
+//            self.cellValues.append( cell.inputTF.text! )
 //
 //        }
-//        print(inkypinky)
+//        print(cellValues)
 //    }
 }

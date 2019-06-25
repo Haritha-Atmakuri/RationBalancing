@@ -8,16 +8,25 @@
 
 import UIKit
 
-class EditNutrientsController: UIViewController {
+class EditNutrientsController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    var slider : [Nutrients] = [Nutrients(name: "%Ca", minValue: 14.6, maxValue: 18.9),Nutrients(name: "%P", minValue: 5.4, maxValue: 10.2)]
     
-//    UITableViewDataSource, UITableViewDelegate
-//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        <#code#>
-//    }
-//
-//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        <#code#>
-//    }
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return slider.count
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "sliderCell", for: indexPath) as! SliderTableViewCell
+        
+        let slider: Nutrients
+        slider = self.slider[indexPath.row]
+        
+        cell.nutrientLabel.text = slider.name
+        cell.cellSlider1.maximumValue = slider.minValue
+        cell.cellSlider2.minimumValue = slider.maxValue
+        
+        return cell
+    }
     
 
     @IBOutlet weak var tableView: UITableView!
@@ -34,8 +43,8 @@ class EditNutrientsController: UIViewController {
         view.addSubview(imageView)
         self.view.sendSubviewToBack(imageView)
         super.viewDidLoad()
-//        tableView.delegate = self
-//        tableView.dataSource = self
+        tableView.delegate = self
+        tableView.dataSource = self
         // Do any additional setup after loading the view, typically from a nib.
     }
 
