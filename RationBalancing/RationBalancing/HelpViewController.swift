@@ -10,7 +10,26 @@ import UIKit
 
 class HelpViewController: UIViewController {
 
+    @IBOutlet weak var HelpTextView: UITextView!
     override func viewDidLoad() {
+        
+        
+        
+        let shownString = NSMutableAttributedString(string: "Please  click  here to know more on calculations of Ration Balancing")
+        let url = URL(string: "http://www.ansc.purdue.edu/compute/balance.htm")!
+        
+        // Set the 'click here' substring to be the link
+        shownString.setAttributes([.link: url], range: NSMakeRange(7, 12))
+        
+        HelpTextView.attributedText = shownString
+        HelpTextView.isUserInteractionEnabled = true
+        HelpTextView.isEditable = false
+        
+        // Set how links should appear: blue and underlined
+        HelpTextView.linkTextAttributes = [
+            .foregroundColor: UIColor.blue,
+            .underlineStyle: NSUnderlineStyle.single.rawValue
+        ]
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
