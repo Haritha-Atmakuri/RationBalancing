@@ -1,20 +1,17 @@
 //
-//  SliderTableViewCell.swift
+//  EditNutrientsTableViewCell.swift
 //  RationBalancing
 //
-//  Created by student on 6/24/19.
+//  Created by student on 6/26/19.
 //  Copyright © 2019 NWMSU. All rights reserved.
 //
 
 import UIKit
 
-class SliderTableViewCell: UITableViewCell {
+class EditNutrientsTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var nutrientLabel: UILabel!
-    @IBOutlet weak var cellSlider1: UISlider!
-    @IBOutlet weak var cellSlider2: UISlider!
-
-
+    @IBOutlet weak var name: UILabel!
+    @IBOutlet weak var value: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

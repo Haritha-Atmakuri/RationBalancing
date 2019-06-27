@@ -76,88 +76,6 @@
             </objects>
             <point key="canvasLocation" x="749.64028776978421" y="-320.1005025125628"/>
         </scene>
-        <!--Edit Nutrients-->
-        <scene sceneID="wg7-f3-ORb">
-            <objects>
-                <viewController id="8rJ-Kc-sve" customClass="EditNutrientsController" customModule="RationBalancing" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
-                        <rect key="frame" x="0.0" y="0.0" width="834" height="1194"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qLW-wF-tge">
-                                <rect key="frame" x="20" y="188" width="794" height="679"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="sliderCell" id="HuT-2d-gUi" customClass="SliderTableViewCell" customModule="RationBalancing" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="794" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HuT-2d-gUi" id="AtU-zt-OG1" customClass="SliderTableViewCell" customModule="RationBalancing" customModuleProvider="target">
-                                            <rect key="frame" x="0.0" y="0.0" width="794" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6gj-JQ-8Hj">
-                                                    <rect key="frame" x="38" y="0.0" width="254" height="33"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="254" id="mbd-W3-GIo"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <slider opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="JP5-lh-yMT">
-                                                    <rect key="frame" x="444" y="7" width="118" height="30"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="114" id="5TO-1H-p0y"/>
-                                                    </constraints>
-                                                </slider>
-                                                <slider opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="MVR-rI-YJA">
-                                                    <rect key="frame" x="568" y="7" width="118" height="30"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="114" id="gYM-9I-g59"/>
-                                                    </constraints>
-                                                </slider>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="JP5-lh-yMT" firstAttribute="centerY" secondItem="AtU-zt-OG1" secondAttribute="centerY" id="86G-iF-Dul"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="MVR-rI-YJA" secondAttribute="trailing" constant="90" id="FQO-qs-UyZ"/>
-                                                <constraint firstItem="MVR-rI-YJA" firstAttribute="leading" secondItem="JP5-lh-yMT" secondAttribute="trailing" constant="10" id="LtO-cu-Mgs"/>
-                                                <constraint firstItem="6gj-JQ-8Hj" firstAttribute="bottom" secondItem="AtU-zt-OG1" secondAttribute="bottomMargin" id="Tln-pT-JbY"/>
-                                                <constraint firstItem="JP5-lh-yMT" firstAttribute="top" secondItem="AtU-zt-OG1" secondAttribute="topMargin" constant="-17" id="VVM-Rb-nN0"/>
-                                                <constraint firstItem="6gj-JQ-8Hj" firstAttribute="top" secondItem="AtU-zt-OG1" secondAttribute="top" id="Yss-X6-4Iv"/>
-                                                <constraint firstItem="6gj-JQ-8Hj" firstAttribute="leading" secondItem="AtU-zt-OG1" secondAttribute="leadingMargin" constant="18" id="aCm-VX-cwY"/>
-                                                <constraint firstItem="JP5-lh-yMT" firstAttribute="bottom" secondItem="MVR-rI-YJA" secondAttribute="bottom" id="qN2-Cy-brf"/>
-                                                <constraint firstItem="JP5-lh-yMT" firstAttribute="top" secondItem="MVR-rI-YJA" secondAttribute="top" id="z8i-PI-j3d"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <outlet property="cellSlider1" destination="JP5-lh-yMT" id="WN0-WI-5c9"/>
-                                            <outlet property="cellSlider2" destination="MVR-rI-YJA" id="4Vi-F9-kVS"/>
-                                            <outlet property="nutrientLabel" destination="6gj-JQ-8Hj" id="nby-hk-EIL"/>
-                                            <outlet property="slider1" destination="86G-iF-Dul" id="UdM-Xd-UYS"/>
-                                            <outlet property="slider2" destination="86G-iF-Dul" id="VQU-HM-xfV"/>
-                                        </connections>
-                                    </tableViewCell>
-                                </prototypes>
-                            </tableView>
-                        </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="qLW-wF-tge" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" id="3DY-ae-QCa"/>
-                            <constraint firstItem="O1u-W8-tvY" firstAttribute="bottom" secondItem="qLW-wF-tge" secondAttribute="bottom" constant="262" id="60D-mV-Q68"/>
-                            <constraint firstItem="qLW-wF-tge" firstAttribute="top" secondItem="O1u-W8-tvY" secondAttribute="top" constant="164" id="Ual-D5-XMo"/>
-                            <constraint firstItem="qLW-wF-tge" firstAttribute="trailing" secondItem="QS5-Rx-YEW" secondAttribute="trailingMargin" id="sVf-hU-WiV"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Edit Nutrients" image="second" id="cPa-gy-q4n"/>
-                    <connections>
-                        <outlet property="tableView" destination="qLW-wF-tge" id="Cq5-4z-Qj7"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="749.64028776978421" y="359.79899497487435"/>
-        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
             <objects>
@@ -169,13 +87,62 @@
                     </tabBar>
                     <connections>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
-                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                         <segue destination="uFb-K6-Oif" kind="relationship" relationship="viewControllers" id="Dpa-dJ-ggU"/>
+                        <segue destination="3tr-ZM-wVR" kind="relationship" relationship="viewControllers" id="eGa-UW-GwI"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="jzW-Ld-oVi">
+            <objects>
+                <tableViewController id="3tr-ZM-wVR" customClass="EditNutrientsTableViewController" customModule="RationBalancing" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="0ov-MG-uJP">
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1194"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="nutrientValues" id="FFg-hl-yK1" customClass="EditNutrientsTableViewCell" customModule="RationBalancing" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="834" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FFg-hl-yK1" id="Clq-NX-QWc">
+                                    <rect key="frame" x="0.0" y="0.0" width="834" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zH4-qc-HIk">
+                                            <rect key="frame" x="39" y="12" width="235" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WCc-eC-in5">
+                                            <rect key="frame" x="502" y="12" width="212" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="name" destination="zH4-qc-HIk" id="n28-zq-HRR"/>
+                                    <outlet property="value" destination="WCc-eC-in5" id="8Ia-tV-E6l"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="3tr-ZM-wVR" id="wy8-TA-4ax"/>
+                            <outlet property="delegate" destination="3tr-ZM-wVR" id="IVK-73-FJA"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Item" id="Yrd-dP-6nl"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vYO-1g-aFg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="763.30935251798564" y="386.93467336683415"/>
         </scene>
         <!--Master-->
         <scene sceneID="Xq1-T3-ZQ4">
@@ -191,7 +158,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eFh-4n-k1g" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-159" y="1496"/>
+            <point key="canvasLocation" x="0.0" y="1131"/>
         </scene>
         <!--Detail-->
         <scene sceneID="UaD-2y-hoZ">
@@ -269,7 +236,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FNK-qK-nou" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="958.99280575539581" y="2348.7437185929648"/>
+            <point key="canvasLocation" x="855" y="1940"/>
         </scene>
         <!--Ration Balance-->
         <scene sceneID="yHC-pV-bD2">
@@ -284,7 +251,7 @@
                 </splitViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y6a-xu-Nfe" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1108" y="2032"/>
+            <point key="canvasLocation" x="-1096" y="1347"/>
         </scene>
         <!--Master-->
         <scene sceneID="ZSV-Eu-W9p">
@@ -327,7 +294,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eDh-Ec-ysr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="844" y="1496"/>
+            <point key="canvasLocation" x="855" y="1131"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="oA3-o7-RDQ">
@@ -343,14 +310,13 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZN4-gF-XUy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-159" y="2350"/>
+            <point key="canvasLocation" x="0.0" y="1940"/>
         </scene>
     </scenes>
     <resources>
         <image name="first" width="30" height="30"/>
-        <image name="second" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="rSh-vT-Egn"/>
+        <segue reference="YrD-7M-rA6"/>
     </inferredMetricsTieBreakers>
 </document>

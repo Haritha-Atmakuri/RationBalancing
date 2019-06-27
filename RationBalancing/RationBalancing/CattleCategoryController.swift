@@ -38,8 +38,8 @@ class CattleCategoryController: UIViewController, UIPickerViewDelegate, UIPicker
     @IBOutlet weak var cattleCategory: UIPickerView!
     @IBOutlet weak var growthRequirement: UIPickerView!
 
-    var cattle = ["400lb","600lb","750lb","900lb"]
-    var growth = [2,2.5,3,3.5,4,4.5]
+    var cattle = ["440"]
+    var growth = [1.1,2.2,3.3,4.4]
     
     override func viewDidLoad() {
         //Adding the Background Image
