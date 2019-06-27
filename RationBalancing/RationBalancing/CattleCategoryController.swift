@@ -38,7 +38,7 @@ class CattleCategoryController: UIViewController, UIPickerViewDelegate, UIPicker
     @IBOutlet weak var cattleCategory: UIPickerView!
     @IBOutlet weak var growthRequirement: UIPickerView!
 
-    var cattle = ["440"]
+    var cattle = ["250","300","350","400","450"]
     var growth = [1.1,2.2,3.3,4.4]
     
     override func viewDidLoad() {
