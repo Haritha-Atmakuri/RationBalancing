@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		3F28F20522C3D8DB00BCA34B /* EditNutrientsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F28F20422C3D8DB00BCA34B /* EditNutrientsTableViewCell.swift */; };
-		3F28F20722C3D8FA00BCA34B /* EditNutrientsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F28F20622C3D8FA00BCA34B /* EditNutrientsTableViewController.swift */; };
 		3F5BA1B022BBDC9C004CA69A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5BA1AF22BBDC9C004CA69A /* AppDelegate.swift */; };
 		3F5BA1B222BBDC9C004CA69A /* CattleCategoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5BA1B122BBDC9C004CA69A /* CattleCategoryController.swift */; };
 		3F5BA1B722BBDC9C004CA69A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F5BA1B522BBDC9C004CA69A /* Main.storyboard */; };
@@ -42,7 +41,6 @@
 
 /* Begin PBXFileReference section */
 		3F28F20422C3D8DB00BCA34B /* EditNutrientsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditNutrientsTableViewCell.swift; sourceTree = "<group>"; };
-		3F28F20622C3D8FA00BCA34B /* EditNutrientsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditNutrientsTableViewController.swift; sourceTree = "<group>"; };
 		3F5BA1AC22BBDC9C004CA69A /* RationBalancing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RationBalancing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F5BA1AF22BBDC9C004CA69A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F5BA1B122BBDC9C004CA69A /* CattleCategoryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CattleCategoryController.swift; sourceTree = "<group>"; };
@@ -118,7 +116,6 @@
 				3F5BA1BA22BBDC9E004CA69A /* LaunchScreen.storyboard */,
 				3F5BA1BD22BBDC9E004CA69A /* Info.plist */,
 				3F5BA1B122BBDC9C004CA69A /* CattleCategoryController.swift */,
-				3F28F20622C3D8FA00BCA34B /* EditNutrientsTableViewController.swift */,
 				3F5BA1DF22BBDF69004CA69A /* MasterTableViewController.swift */,
 				3F5BA1E122BBDFB3004CA69A /* DetailViewController.swift */,
 				3FBD647022BF3900000F004B /* HelpViewController.swift */,
@@ -285,7 +282,6 @@
 				3F65F55B22BF3E9A0053FE0B /* RationTableCellDetails.swift in Sources */,
 				3F5BA1B022BBDC9C004CA69A /* AppDelegate.swift in Sources */,
 				3F5BA1B222BBDC9C004CA69A /* CattleCategoryController.swift in Sources */,
-				3F28F20722C3D8FA00BCA34B /* EditNutrientsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
