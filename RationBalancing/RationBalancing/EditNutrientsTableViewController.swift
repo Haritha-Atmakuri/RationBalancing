@@ -33,12 +33,12 @@ class EditNutrientsTableViewController: UITableViewController {
         
         NutrientsRange.shared.addNutrients()
         nutrients = NutrientsRange.shared.nutrients
-//        if value1 != nil && value2 != nil{
+        if value1 != nil && value2 != nil{
         for i in 0..<nutrients.count{
             if nutrients[i].cattleWeight == value1! && nutrients[i].growthRequirement == value2!{
                 nutrients1.append(nutrients[i])
             }
-//            }
+            }
         }
     }
     override func viewWillAppear(_ animated: Bool) {
