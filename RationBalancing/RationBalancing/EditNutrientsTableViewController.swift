@@ -12,13 +12,13 @@ class EditNutrientsTableViewController: UITableViewController {
 
     var nutrients : [Nutreints] = []
 //    var nutrients1 : [Nutreints] = []
-//    var value1 : String?
-//    var value2 : Double?
+    var value1 : String?
+    var value2 : Double?
     override func viewDidLoad() {
         super.viewDidLoad()
 //        nutrients1 = []
-//        print(value1!)
-//        print(value2!)
+       print(value1!)
+       print(value2!)
         tableView.separatorStyle = .none
         tableView.tableFooterView = UIView()
         let background = UIImage(named: "cattle1")

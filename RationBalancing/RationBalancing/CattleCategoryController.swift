@@ -42,11 +42,11 @@ class CattleCategoryController: UIViewController, UIPickerViewDelegate, UIPicker
         // The parameter named row and component represents what was selected.
         if pickerView == cattleCategory {
             cattleWeightSelected = cattle[row] as String
-            //secondTab.value1 = cattleWeightSelected
+            secondTab.value1 = cattleWeightSelected
         }
         else if pickerView == growthRequirement {
             cattleCategorySelected = growth[row] as Double
-           //secondTab.value2 = cattleCategorySelected
+           secondTab.value2 = cattleCategorySelected
         }
     }
 

@@ -118,11 +118,11 @@
 				3F5BA1BA22BBDC9E004CA69A /* LaunchScreen.storyboard */,
 				3F5BA1BD22BBDC9E004CA69A /* Info.plist */,
 				3F5BA1B122BBDC9C004CA69A /* CattleCategoryController.swift */,
+				3F28F20822C4446800BCA34B /* EditNutrientsTableViewController.swift */,
 				3F5BA1DF22BBDF69004CA69A /* MasterTableViewController.swift */,
 				3F5BA1E122BBDFB3004CA69A /* DetailViewController.swift */,
 				3FBD647022BF3900000F004B /* HelpViewController.swift */,
 				3F65F55A22BF3E9A0053FE0B /* RationTableCellDetails.swift */,
-				3F28F20822C4446800BCA34B /* EditNutrientsTableViewController.swift */,
 				3F28F20422C3D8DB00BCA34B /* EditNutrientsTableViewCell.swift */,
 			);
 			path = RationBalancing;
