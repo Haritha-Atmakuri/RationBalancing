@@ -11,12 +11,12 @@ import UIKit
 class EditNutrientsTableViewController: UITableViewController {
 
     var nutrients : [Nutreints] = []
-//    var nutrients1 : [Nutreints] = []
+    var nutrients1 : [Nutreints] = []
     var value1 : String?
     var value2 : Double?
     override func viewDidLoad() {
         super.viewDidLoad()
-//        nutrients1 = []
+        nutrients1 = []
        print(value1!)
        print(value2!)
         tableView.separatorStyle = .none
@@ -34,22 +34,13 @@ class EditNutrientsTableViewController: UITableViewController {
         NutrientsRange.shared.addNutrients()
         nutrients = NutrientsRange.shared.nutrients
 //        if value1 != nil && value2 != nil{
-//        for i in 0..<nutrients.count{
-//            if nutrients[i].cattleWeight == value1! && nutrients[i].growthRequirement == value2!{
-//                nutrients1.append(nutrients[i])
-//            }
+        for i in 0..<nutrients.count{
+            if nutrients[i].cattleWeight == value1! && nutrients[i].growthRequirement == value2!{
+                nutrients1.append(nutrients[i])
+            }
 //            }
         }
-//        print("nutrients from nutrients class: \(nutrients)")
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
-
-    // MARK: - Table view data source
-
-    
+    }
     override func viewWillAppear(_ animated: Bool) {
         self.viewDidLoad()
         tableView.reloadData()
