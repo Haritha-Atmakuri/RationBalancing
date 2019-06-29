@@ -13,6 +13,7 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
     static var selectedIngredients:[String] = []
     var rationValues:[Double] = []
     var cellValues:[String] = []
+    var ingDic:[String:Double] = [:]
     @IBOutlet weak var tableView: UITableView!
     
     func numberOfSections(in tableView: UITableView) -> Int {

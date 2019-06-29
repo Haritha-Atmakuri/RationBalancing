@@ -35,12 +35,27 @@ class CattleCategoryController: UIViewController, UIPickerViewDelegate, UIPicker
         return ""
     }
 
+    var cattleWeightSelected : String = ""
+    var cattleCategorySelected : Double = 0.0
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        // This method is triggered whenever the user makes a change to the picker selection.
+        // The parameter named row and component represents what was selected.
+        if pickerView == cattleCategory {
+            cattleWeightSelected = cattle[row] as String
+//            secondTab.value1 = cattleWeightSelected
+        }
+        else if pickerView == growthRequirement {
+            cattleCategorySelected = growth[row] as Double
+//            secondTab.value2 = cattleCategorySelected
+        }
+    }
+
     @IBOutlet weak var cattleCategory: UIPickerView!
     @IBOutlet weak var growthRequirement: UIPickerView!
 
-    var cattle = ["250","300","350","400","450"]
+    var cattle = ["440"]
     var growth = [1.1,2.2,3.3,4.4]
-    
+    var secondTab : EditNutrientsTableViewController!
     override func viewDidLoad() {
         //Adding the Background Image
         let background = UIImage(named: "cattle1")
@@ -53,7 +68,15 @@ class CattleCategoryController: UIViewController, UIPickerViewDelegate, UIPicker
         view.addSubview(imageView)
         self.view.sendSubviewToBack(imageView)
         super.viewDidLoad()
-
+        //
+//        self.navigationItem.title = "CATTLE SETTINGS"
+        
+        
+        // This is used to form relation with EditNutrientsTableViewController
+        secondTab = self.tabBarController?.viewControllers![2] as! EditNutrientsTableViewController
+        //This is used to get default values for pickerview
+//        cattleCategory.selectRow(0, inComponent: 0, animated: true)
+//        growthRequirement.selectRow(0, inComponent: 0, animated: true)
         self.cattleCategory.delegate = self
         self.cattleCategory.dataSource = self
         self.growthRequirement.delegate = self
