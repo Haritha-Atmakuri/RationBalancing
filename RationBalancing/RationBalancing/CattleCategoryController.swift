@@ -75,8 +75,8 @@ class CattleCategoryController: UIViewController, UIPickerViewDelegate, UIPicker
         // This is used to form relation with EditNutrientsTableViewController
         secondTab = self.tabBarController?.viewControllers![2] as! EditNutrientsTableViewController
         //This is used to get default values for pickerview
-//        cattleCategory.selectRow(0, inComponent: 0, animated: true)
-//        growthRequirement.selectRow(0, inComponent: 0, animated: true)
+        cattleCategory.selectRow(0, inComponent: 0, animated: true)
+        growthRequirement.selectRow(0, inComponent: 0, animated: true)
         self.cattleCategory.delegate = self
         self.cattleCategory.dataSource = self
         self.growthRequirement.delegate = self
