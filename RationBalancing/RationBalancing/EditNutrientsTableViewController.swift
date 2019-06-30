@@ -17,8 +17,6 @@ class EditNutrientsTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         nutrients1 = []
-       print(value1!)
-       print(value2!)
         tableView.separatorStyle = .none
         tableView.tableFooterView = UIView()
         let background = UIImage(named: "cattle1")
@@ -48,7 +46,7 @@ class EditNutrientsTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return nutrients.count
+        return nutrients1.count
     }
 
     
@@ -58,8 +56,8 @@ class EditNutrientsTableViewController: UITableViewController {
         cell.backgroundColor = UIColor(white: 1, alpha: 0.65)
         cell.name.textColor = UIColor.red
         cell.value.textColor = UIColor.red
-        cell.name.text = nutrients[indexPath.row].nutrientType
-        cell.value.text = "\(String(describing: nutrients[indexPath.row].value))"
+        cell.name.text = nutrients1[indexPath.row].nutrientType
+        cell.value.text = "\(String(describing: nutrients1[indexPath.row].value))"
         // Configure the cell...
 
         return cell
