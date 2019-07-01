@@ -72,11 +72,11 @@ class MasterTableViewController: UITableViewController {
         return ingredientsSection[section].uppercased()
     }
     
-//    override func tableView(_ tableView: UITableView, willDisplayFooterView view: UIView, forSection section: Int) {
-//        if let view = view as? UITableViewHeaderFooterView {
-//            view.textLabel?.textColor = .white
-//        }
-//    }
+    override func tableView(_ tableView: UITableView, willDisplayFooterView view: UIView, forSection section: Int) {
+        if let view = view as? UITableViewHeaderFooterView {
+            view.textLabel?.textColor = .white
+        }
+    }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         let ingredientKey = ingredientsSection[section]
