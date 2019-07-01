@@ -53,7 +53,7 @@ class CattleCategoryController: UIViewController, UIPickerViewDelegate, UIPicker
     @IBOutlet weak var cattleCategory: UIPickerView!
     @IBOutlet weak var growthRequirement: UIPickerView!
 
-    var cattle = ["440"]
+    var cattle = ["440","550","660","770","880","990"]
     var growth = [1.1,2.2,3.3,4.4]
     var secondTab : EditNutrientsTableViewController!
     override func viewDidLoad() {
