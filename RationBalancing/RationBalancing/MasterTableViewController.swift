@@ -96,9 +96,9 @@ class MasterTableViewController: UITableViewController {
         return cell
     }
     
-//    override func sectionIndexTitles(for tableView: UITableView) -> [String]? {
-//        return ingredientsSection
-//    }
+    override func sectionIndexTitles(for tableView: UITableView) -> [String]? {
+        return ingredientsSection
+    }
     
     override func tableView(_ tableView: UITableView, sectionForSectionIndexTitle title: String, at index: Int) -> Int {
         guard let index = ingredientsSection.index(of: title) else {
