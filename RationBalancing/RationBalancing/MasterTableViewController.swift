@@ -15,8 +15,8 @@ class MasterTableViewController: UITableViewController {
     var ingredientsSection = [String]()
     var ingredientsDictionary = [String : [String]]()
     var selectIngredients:[String] = []
-  
-    lazy   var searchBar:UISearchBar = UISearchBar(frame: CGRect(x: 0, y: 0, width: 200, height: 200))
+    
+    lazy var searchBar:UISearchBar = UISearchBar(frame: CGRect(x: 0, y: 0, width: 200, height: 200))
     
     override func viewDidLoad() {
         searchBar.placeholder = "Select Ingredients"
@@ -37,14 +37,15 @@ class MasterTableViewController: UITableViewController {
             let lower = key.lowercased()
             if var ingredientValue = ingredientsDictionary[lower]{
                 ingredientValue.append(ingredient)
-                print(ingredientValue)
+                ingredientsDictionary[lower] = ingredientValue
             }else{
                 ingredientsDictionary[lower] = [ingredient]
+                //                print(ingredientsDictionary)
             }
         }
         ingredientsSection = [String](ingredientsDictionary.keys)
         ingredientsSection = ingredientsSection.sorted()
-        print(ingredientsDictionary)
+        //        print(ingredientsDictionary)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -128,6 +129,7 @@ class MasterTableViewController: UITableViewController {
             }
         }
     }
+
 
 }
 
