@@ -68,9 +68,9 @@ class MasterTableViewController: UITableViewController {
         return ingredientsSection.count
     }
     
-//    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-//        return ingredientsSection[section].uppercased()
-//    }
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return ingredientsSection[section].uppercased()
+    }
     
 //    override func tableView(_ tableView: UITableView, willDisplayFooterView view: UIView, forSection section: Int) {
 //        if let view = view as? UITableViewHeaderFooterView {
