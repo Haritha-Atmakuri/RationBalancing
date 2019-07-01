@@ -11,18 +11,11 @@ import UIKit
 class MasterTableViewController: UITableViewController {
     var detailViewController: DetailViewController? = nil
     var objects = [Any]()
-    var ingredients:[String] = [
-        "Corn",
-        "Milo",
-        "Molasses-Liq Cane",
-        "Molasses-Dried Cane",
-        "Oats",
-        "Rice-Rough",
-        "Rice Bran",
-        "Wheat"
-    ]
+    var ingredients:[String] = ["Corn","Milo","Molasses-Liq Cane","Molasses-Dried Cane","Oats","Rice-Rough","Rice Bran","Wheat"]
+    var ingredientsSection = [String]()
+    var ingredientsDictionary = [String : [String]]()
     var selectIngredients:[String] = []
-    let sections = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
+  
     lazy   var searchBar:UISearchBar = UISearchBar(frame: CGRect(x: 0, y: 0, width: 200, height: 200))
     
     override func viewDidLoad() {
@@ -30,14 +23,28 @@ class MasterTableViewController: UITableViewController {
         let leftNavBarButton = UIBarButtonItem(customView:searchBar)
         self.navigationItem.leftBarButtonItem = leftNavBarButton
         super.viewDidLoad()
-        //        navigationItem.leftBarButtonItem = editButtonItem
+        generateDictionary()
         self.tableView.allowsMultipleSelection = true
-        //        let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action:                 #selector(insertNewObject(_:)))
-        //        navigationItem.rightBarButtonItem = addButton
         if let split = splitViewController {
             let controllers = split.viewControllers
             detailViewController = (controllers[controllers.count-1] as! UINavigationController).topViewController as? DetailViewController
         }
+    }
+    
+    func generateDictionary(){
+        for ingredient in ingredients {
+            let key = "\(ingredient[ingredient.startIndex])"
+            let lower = key.lowercased()
+            if var ingredientValue = ingredientsDictionary[lower]{
+                ingredientValue.append(ingredient)
+                print(ingredientValue)
+            }else{
+                ingredientsDictionary[lower] = [ingredient]
+            }
+        }
+        ingredientsSection = [String](ingredientsDictionary.keys)
+        ingredientsSection = ingredientsSection.sorted()
+        print(ingredientsDictionary)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -51,48 +58,53 @@ class MasterTableViewController: UITableViewController {
         if segue.identifier == "showDetail" {
             if let indexPath = tableView.indexPathForSelectedRow {
                 let controller = (segue.destination as! UINavigationController).topViewController as! DetailViewController
-                //                controller.selectedIngredients = selectIngredients
-                //                print("to Controller=>: \(controller.selectedIngredients)")
-                //                controller.detailItem = object
                 controller.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
                 controller.navigationItem.leftItemsSupplementBackButton = true
             }
         }
     }
     
-    // MARK: - Table View
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        return ingredientsSection.count
+    }
     
-//    override func numberOfSections(in tableView: UITableView) -> Int {
-//        return 1
+//    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+//        return ingredientsSection[section].uppercased()
+//    }
+    
+//    override func tableView(_ tableView: UITableView, willDisplayFooterView view: UIView, forSection section: Int) {
+//        if let view = view as? UITableViewHeaderFooterView {
+//            view.textLabel?.textColor = .white
+//        }
 //    }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return ingredients.count
+        let ingredientKey = ingredientsSection[section]
+        if let ingredientValue = ingredientsDictionary[ingredientKey]{
+            return ingredientValue.count
+        }
+        return 0
     }
-    
-    func numberOfSectionsInTableView(tableView: UITableView) -> Int{
-        return 26
-    }
-    
-    
-    func sectionIndexTitlesForTableView(tableView: UITableView) -> [AnyObject]!{
-        return self.sections as [AnyObject]
-    }
-    
-    func tableView(tableView: UITableView, sectionForSectionIndexTitle title: String,
-atIndex index: Int) -> Int{
-        return index
-    }
-    
-    func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String?{
-        return self.sections[section]
-    }
-    
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        cell.textLabel!.text = ingredients[indexPath.row]
+        let ingredientkey = ingredientsSection[indexPath.section]
+        if  let ingredientValue = ingredientsDictionary[ingredientkey.lowercased()] {
+            cell.textLabel?.text = ingredientValue[indexPath.row]
+            cell.textLabel?.textColor = UIColor.black
+        }
         return cell
+    }
+    
+//    override func sectionIndexTitles(for tableView: UITableView) -> [String]? {
+//        return ingredientsSection
+//    }
+    
+    override func tableView(_ tableView: UITableView, sectionForSectionIndexTitle title: String, at index: Int) -> Int {
+        guard let index = ingredientsSection.index(of: title) else {
+            return -1
+        }
+        return index
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -118,3 +130,17 @@ atIndex index: Int) -> Int{
     }
 
 }
+
+
+
+
+//    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//        return ingredients.count
+//    }
+//
+//    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+//        cell.textLabel!.text = ingredients[indexPath.row]
+//        return cell
+//    }
+
