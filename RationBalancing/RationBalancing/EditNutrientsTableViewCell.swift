@@ -10,8 +10,8 @@ import UIKit
 
 class EditNutrientsTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var value: UITextField!
     @IBOutlet weak var name: UILabel!
-    @IBOutlet weak var value: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
