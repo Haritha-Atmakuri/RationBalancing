@@ -11,7 +11,8 @@ import UIKit
 class RationTableCellDetails: UITableViewCell {
 
     @IBOutlet weak var textTF: UILabel!
-    @IBOutlet weak var inputTF: UITextField!
+    @IBOutlet weak var costTF: UITextField!
+    @IBOutlet weak var percentageTF: UITextField!
     
     override func awakeFromNib() {
         super.awakeFromNib()

@@ -255,8 +255,15 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hvg-6f-wsi">
-                                                    <rect key="frame" x="306" y="6" width="253" height="30"/>
+                                                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter % in lb" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hvg-6f-wsi">
+                                                    <rect key="frame" x="306" y="6" width="137" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Cost" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pCI-eb-I0E">
+                                                    <rect key="frame" x="471" y="6" width="138" height="30"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -265,7 +272,9 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="costTF" destination="pCI-eb-I0E" id="nR8-oQ-5pN"/>
                                             <outlet property="inputTF" destination="Hvg-6f-wsi" id="88H-pT-wwp"/>
+                                            <outlet property="percentageTF" destination="Hvg-6f-wsi" id="CrR-fK-log"/>
                                             <outlet property="textTF" destination="0cv-Fu-yVn" id="sl2-AB-JcG"/>
                                         </connections>
                                     </tableViewCell>
@@ -304,7 +313,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FNK-qK-nou" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="855" y="1940"/>
+            <point key="canvasLocation" x="854.67625899280586" y="1939.748201438849"/>
         </scene>
         <!--Ration Balance-->
         <scene sceneID="yHC-pV-bD2">
@@ -326,7 +335,7 @@
             <objects>
                 <tableViewController title="Master" clearsSelectionOnViewWillAppear="NO" id="ECL-Jc-yXt" customClass="MasterTableViewController" customModule="RationBalancing" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="IZw-e2-tK0">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="1112"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="1092"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
