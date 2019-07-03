@@ -139,25 +139,22 @@ class EditNutrientsTableViewController: UITableViewController {
 //        }
 //    }
     
+
+    @IBAction func save(_ sender: Any) {
+        print("Inside save method")
+        print(nutrientsType)
+        temp1 = []
+        temp2 = []
+        for i in 0 ..< self.tableView.numberOfRows(inSection: 0){
+            let cell: EditNutrientsTableViewCell = self.tableView.cellForRow(at: IndexPath(row: i, section: 0)) as! EditNutrientsTableViewCell
+           self.temp1.append(cell.name.text!)
+           self.temp2.append(Float(cell.value.text!)!)
+//            self.nutrients1.append(Nutreints(cattleWeight: value1!, growthRequirement: value2!, nutrientType: cell.name.text!, minvalue: Float(cell.value.text!)!))
+        }
+        print(nutrients1)
+        self.tabBarController?.selectedIndex = 0
+    }
 }
-
-
-
-//    @IBAction func save(_ sender: Any) {
-//        print("Inside save method")
-//        print(nutrientsType)
-//        temp1 = []
-//        temp2 = []
-//        for i in 0 ..< self.tableView.numberOfRows(inSection: 0){
-//            let cell: EditNutrientsTableViewCell = self.tableView.cellForRow(at: IndexPath(row: i, section: 0)) as! EditNutrientsTableViewCell
-//           self.temp1.append(cell.name.text!)
-//           self.temp2.append(Float(cell.value.text!)!)
-////            self.nutrients1.append(Nutreints(cattleWeight: value1!, growthRequirement: value2!, nutrientType: cell.name.text!, minvalue: Float(cell.value.text!)!))
-//        }
-//        print(nutrients1)
-//        self.tabBarController?.selectedIndex = 0
-//    }
-//}
 
 
 //public extension UITableView {

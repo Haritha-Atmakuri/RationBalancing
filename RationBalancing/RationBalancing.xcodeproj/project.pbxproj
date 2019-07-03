@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F13140722CC961600A33E0B /* ResultTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F13140622CC961600A33E0B /* ResultTableViewController.swift */; };
 		3F28F20522C3D8DB00BCA34B /* EditNutrientsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F28F20422C3D8DB00BCA34B /* EditNutrientsTableViewCell.swift */; };
 		3F28F20922C4446800BCA34B /* EditNutrientsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F28F20822C4446800BCA34B /* EditNutrientsTableViewController.swift */; };
 		3F5BA1B022BBDC9C004CA69A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5BA1AF22BBDC9C004CA69A /* AppDelegate.swift */; };
@@ -41,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F13140622CC961600A33E0B /* ResultTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultTableViewController.swift; sourceTree = "<group>"; };
 		3F28F20422C3D8DB00BCA34B /* EditNutrientsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditNutrientsTableViewCell.swift; sourceTree = "<group>"; };
 		3F28F20822C4446800BCA34B /* EditNutrientsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditNutrientsTableViewController.swift; sourceTree = "<group>"; };
 		3F5BA1AC22BBDC9C004CA69A /* RationBalancing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RationBalancing.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -124,6 +126,7 @@
 				3FBD647022BF3900000F004B /* HelpViewController.swift */,
 				3F65F55A22BF3E9A0053FE0B /* RationTableCellDetails.swift */,
 				3F28F20422C3D8DB00BCA34B /* EditNutrientsTableViewCell.swift */,
+				3F13140622CC961600A33E0B /* ResultTableViewController.swift */,
 			);
 			path = RationBalancing;
 			sourceTree = "<group>";
@@ -279,6 +282,7 @@
 			files = (
 				3F28F20522C3D8DB00BCA34B /* EditNutrientsTableViewCell.swift in Sources */,
 				3F65F55D22C12FE70053FE0B /* FoodStuffModel.swift in Sources */,
+				3F13140722CC961600A33E0B /* ResultTableViewController.swift in Sources */,
 				3FBD647122BF3900000F004B /* HelpViewController.swift in Sources */,
 				3F5BA1E022BBDF69004CA69A /* MasterTableViewController.swift in Sources */,
 				3F5BA1E222BBDFB3004CA69A /* DetailViewController.swift in Sources */,
