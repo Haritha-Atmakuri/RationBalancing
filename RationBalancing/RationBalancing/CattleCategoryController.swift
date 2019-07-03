@@ -83,5 +83,11 @@ class CattleCategoryController: UIViewController, UIPickerViewDelegate, UIPicker
         self.growthRequirement.dataSource = self
     }
 
+    @IBAction func saveBTNTapped(_ sender: Any) {
+        secondTab.value1 = cattleWeightSelected
+        secondTab.value2 = cattleCategorySelected
+        self.tabBarController?.selectedIndex = 2
+    }
+    
 }
 
