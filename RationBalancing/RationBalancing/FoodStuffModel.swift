@@ -18,14 +18,10 @@ class NutrientsRange{
         
         //        nutrients.append(Nutreints.init(cattleWeight: "440lb", growthRequirement: 1.1 , nutrientType: "NEg", value: 1.27))
         
-        nutrients = [Nutreints.init(cattleWeight: "440", growthRequirement: 1.1 , nutrientType: "NEg", value: 1.27),Nutreints.init(cattleWeight: "440", growthRequirement: 2.2 , nutrientType: "NEg", value: 2.72),Nutreints.init(cattleWeight: "440", growthRequirement: 3.3, nutrientType: "NEg", value: 4.24),Nutreints.init(cattleWeight: "440", growthRequirement: 4.4, nutrientType: "NEg", value: 5.81),
-                Nutreints.init(cattleWeight: "440", growthRequirement: 1.1 , nutrientType: "Ca", value: 14),Nutreints.init(cattleWeight: "440", growthRequirement: 2.2 , nutrientType: "Ca", value: 27),Nutreints.init(cattleWeight: "440", growthRequirement: 3.3, nutrientType: "Ca", value: 39),Nutreints.init(cattleWeight: "440", growthRequirement: 4.4, nutrientType: "Ca", value: 52),
-                Nutreints.init(cattleWeight: "440", growthRequirement: 1.1 , nutrientType: "P", value: 6),Nutreints.init(cattleWeight: "440", growthRequirement: 2.2 , nutrientType: "P", value: 11),Nutreints.init(cattleWeight: "440", growthRequirement: 3.3, nutrientType: "P", value: 16),Nutreints.init(cattleWeight: "440", growthRequirement: 4.4, nutrientType: "P", value: 21),
-                Nutreints.init(cattleWeight: "440", growthRequirement: 1.1 , nutrientType: "NEm", value: 14),Nutreints.init(cattleWeight: "440", growthRequirement: 2.2 , nutrientType: "NEm", value: 27),Nutreints.init(cattleWeight: "440", growthRequirement: 3.3, nutrientType: "NEm", value: 39),Nutreints.init(cattleWeight: "440", growthRequirement: 4.4, nutrientType: "NEm", value: 52),
-                Nutreints.init(cattleWeight: "550", growthRequirement: 1.1 , nutrientType: "NEg", value: 1.5),Nutreints.init(cattleWeight: "550", growthRequirement: 2.2 , nutrientType: "NEg", value: 3.21),Nutreints.init(cattleWeight: "550", growthRequirement: 3.3, nutrientType: "NEg", value: 5.01),Nutreints.init(cattleWeight: "550", growthRequirement: 4.4, nutrientType: "NEg", value: 6.87),
-                Nutreints.init(cattleWeight: "550", growthRequirement: 1.1 , nutrientType: "Ca", value: 13),Nutreints.init(cattleWeight: "550", growthRequirement: 2.2 , nutrientType: "Ca", value: 25),Nutreints.init(cattleWeight: "550", growthRequirement: 3.3, nutrientType: "Ca", value: 36),Nutreints.init(cattleWeight: "550", growthRequirement: 4.4, nutrientType: "Ca", value: 47),
-                Nutreints.init(cattleWeight: "550", growthRequirement: 1.1 , nutrientType: "P", value: 5),Nutreints.init(cattleWeight: "550", growthRequirement: 2.2 , nutrientType: "P", value: 10),Nutreints.init(cattleWeight: "550", growthRequirement: 3.3, nutrientType: "P", value: 15),Nutreints.init(cattleWeight: "550", growthRequirement: 4.4, nutrientType: "P", value: 19),
-                Nutreints.init(cattleWeight: "550", growthRequirement: 1.1 , nutrientType: "NEm", value: 15),Nutreints.init(cattleWeight: "550", growthRequirement: 2.2 , nutrientType: "NEm", value: 28),Nutreints.init(cattleWeight: "550", growthRequirement: 3.3, nutrientType: "NEm", value: 39),Nutreints.init(cattleWeight: "550", growthRequirement: 4.4, nutrientType: "NEm", value: 51)]
+        nutrients = [Nutreints.init(cattleWeight: "440", growthRequirement: 1.1 , nutrientType: "NEg", minvalue: 1.27, maxvalue: 12.00),Nutreints.init(cattleWeight: "440", growthRequirement: 2.2 , nutrientType: "NEg", minvalue: 2.72,maxvalue: 12.00),Nutreints.init(cattleWeight: "440", growthRequirement: 3.3, nutrientType: "NEg", minvalue: 4.24,maxvalue: 12.00),Nutreints.init(cattleWeight: "440", growthRequirement: 4.4, nutrientType: "NEg", minvalue: 5.81,maxvalue: 12.00),
+                     Nutreints.init(cattleWeight: "440", growthRequirement: 1.1 , nutrientType: "Ca", minvalue: 14,maxvalue: 12.00),Nutreints.init(cattleWeight: "440", growthRequirement: 2.2 , nutrientType: "Ca", minvalue: 27,maxvalue: 12.00),Nutreints.init(cattleWeight: "440", growthRequirement: 3.3, nutrientType: "Ca", minvalue: 39,maxvalue: 12.00),Nutreints.init(cattleWeight: "440", growthRequirement: 4.4, nutrientType: "Ca", minvalue: 52,maxvalue: 12.00),
+                     Nutreints.init(cattleWeight: "440", growthRequirement: 1.1 , nutrientType: "P", minvalue: 6,maxvalue: 12.00),Nutreints.init(cattleWeight: "440", growthRequirement: 2.2 , nutrientType: "P", minvalue: 11,maxvalue: 12.00),Nutreints.init(cattleWeight: "440", growthRequirement: 3.3, nutrientType: "P", minvalue: 16,maxvalue: 12.00),Nutreints.init(cattleWeight: "440", growthRequirement: 4.4, nutrientType: "P", minvalue: 21,maxvalue: 12.00),
+                     Nutreints.init(cattleWeight: "440", growthRequirement: 1.1 , nutrientType: "NEm", minvalue: 14,maxvalue: 12.00),Nutreints.init(cattleWeight: "440", growthRequirement: 2.2 , nutrientType: "NEm", minvalue: 27,maxvalue: 12.00),Nutreints.init(cattleWeight: "440", growthRequirement: 3.3, nutrientType: "NEm", minvalue: 39,maxvalue: 12.00),Nutreints.init(cattleWeight: "440", growthRequirement: 4.4, nutrientType: "NEm", minvalue: 52,maxvalue: 12.00)]
 
     }
 }
@@ -36,17 +32,18 @@ struct Nutreints {
     var cattleWeight:String
     var growthRequirement:Double
     var nutrientType:String
-    var value:Float
-    
+    var minvalue:Float
+    var maxvalue:Float
     init(){
-        self.init(cattleWeight: "", growthRequirement: 0.0, nutrientType: "", value: 0.0)
+        self.init(cattleWeight: "", growthRequirement: 0.0, nutrientType: "", minvalue: 0.0,maxvalue: 0.0)
     }
     
-    init(cattleWeight:String,growthRequirement:Double,nutrientType:String,value:Float){
+    init(cattleWeight:String,growthRequirement:Double,nutrientType:String,minvalue:Float,maxvalue:Float){
         self.cattleWeight = cattleWeight
         self.growthRequirement = growthRequirement
         self.nutrientType = nutrientType
-        self.value = value
+        self.minvalue = minvalue
+        self.maxvalue = maxvalue
     }
 }
 

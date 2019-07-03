@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RationBalancing/FoodStuffModel.swift"
-            timestampString = "583694583.051437"
+            timestampString = "583832356.493997"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
             landmarkName = "NutrientsRange"
             landmarkType = "3">
          </BreakpointContent>

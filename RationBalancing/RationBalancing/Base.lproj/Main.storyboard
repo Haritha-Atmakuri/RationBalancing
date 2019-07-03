@@ -197,8 +197,13 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="maxValueDecrement" destination="22L-Tj-ZIY" id="Go5-Uw-1bq"/>
+                                    <outlet property="maxValueIncrement" destination="EmK-mA-omj" id="kaC-lF-hYh"/>
+                                    <outlet property="minValueDec" destination="OpL-Ow-YM8" id="OLQ-af-znm"/>
+                                    <outlet property="minValueIncrement" destination="8VL-J6-AxH" id="jem-vF-9LU"/>
                                     <outlet property="name" destination="zH4-qc-HIk" id="n28-zq-HRR"/>
-                                    <outlet property="value" destination="X9P-MX-0IQ" id="3ED-bA-n7o"/>
+                                    <outlet property="value" destination="9k3-SV-TQH" id="n0g-gG-Txa"/>
+                                    <outlet property="value1" destination="X9P-MX-0IQ" id="qKh-Ds-mb4"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -365,7 +370,7 @@
             <objects>
                 <tableViewController title="Master" clearsSelectionOnViewWillAppear="NO" id="ECL-Jc-yXt" customClass="MasterTableViewController" customModule="RationBalancing" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="IZw-e2-tK0">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="1112"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="1092"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
