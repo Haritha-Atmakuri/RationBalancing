@@ -1,0 +1,6 @@
+framework module Pods_RationBalancing_RationBalancingUITests {
+  umbrella header "Pods-RationBalancing-RationBalancingUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

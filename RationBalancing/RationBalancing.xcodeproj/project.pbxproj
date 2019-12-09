@@ -3,13 +3,22 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3F13140922CC9A8F00A33E0B /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F13140822CC9A8F00A33E0B /* ResultViewController.swift */; };
+		06BF83D202BAA3E8D612571D /* Pods_RationBalancingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7B37C81807D71C3F3465F1F /* Pods_RationBalancingTests.framework */; };
+		3F0BAA62233D13C30052523C /* AdvancedSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0BAA61233D13C30052523C /* AdvancedSearchViewController.swift */; };
+		3F0BAA64233D77560052523C /* IngredientsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0BAA63233D77560052523C /* IngredientsTableViewCell.swift */; };
+		3F0BAA6C2342453C0052523C /* AddIngredientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0BAA6B2342453C0052523C /* AddIngredientViewController.swift */; };
+		3F0BAA6E2342718D0052523C /* ing.json in Resources */ = {isa = PBXBuildFile; fileRef = 3F0BAA6D2342718D0052523C /* ing.json */; };
+		3F0BAA70234271970052523C /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 3F0BAA6F234271970052523C /* index.html */; };
+		3F13140B22CCA17400A33E0B /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F13140A22CCA17400A33E0B /* ResultViewController.swift */; };
+		3F13140D22CD08C900A33E0B /* ResultTableViewCellDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F13140C22CD08C900A33E0B /* ResultTableViewCellDetails.swift */; };
+		3F1AD181232EA49F008CE5AD /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3F1AD17F232EA49F008CE5AD /* Model.xcdatamodeld */; };
 		3F28F20522C3D8DB00BCA34B /* EditNutrientsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F28F20422C3D8DB00BCA34B /* EditNutrientsTableViewCell.swift */; };
 		3F28F20922C4446800BCA34B /* EditNutrientsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F28F20822C4446800BCA34B /* EditNutrientsTableViewController.swift */; };
+		3F59FDED234E702F008574F5 /* Ingredients.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F59FDEC234E702F008574F5 /* Ingredients.swift */; };
 		3F5BA1B022BBDC9C004CA69A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5BA1AF22BBDC9C004CA69A /* AppDelegate.swift */; };
 		3F5BA1B222BBDC9C004CA69A /* CattleCategoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5BA1B122BBDC9C004CA69A /* CattleCategoryController.swift */; };
 		3F5BA1B722BBDC9C004CA69A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F5BA1B522BBDC9C004CA69A /* Main.storyboard */; };
@@ -21,7 +30,12 @@
 		3F5BA1E222BBDFB3004CA69A /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5BA1E122BBDFB3004CA69A /* DetailViewController.swift */; };
 		3F65F55B22BF3E9A0053FE0B /* RationTableCellDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F65F55A22BF3E9A0053FE0B /* RationTableCellDetails.swift */; };
 		3F65F55D22C12FE70053FE0B /* FoodStuffModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F65F55C22C12FE70053FE0B /* FoodStuffModel.swift */; };
+		3FADED582361144200F8B80F /* InformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FADED572361144200F8B80F /* InformationViewController.swift */; };
 		3FBD647122BF3900000F004B /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBD647022BF3900000F004B /* HelpViewController.swift */; };
+		3FD9BECA2352ACDD004E4A49 /* NutrientsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD9BEC92352ACDD004E4A49 /* NutrientsList.swift */; };
+		3FE108C72398BB5D00456005 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE108C62398BB5D00456005 /* CustomButton.swift */; };
+		646A0D409EAC180E84C52062 /* Pods_RationBalancing_RationBalancingUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BAB253A90513419F049A6D9 /* Pods_RationBalancing_RationBalancingUITests.framework */; };
+		9378A972B681CC358ABD6839 /* Pods_RationBalancing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DF76B23FCD05D97A8FF29A6 /* Pods_RationBalancing.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,9 +56,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3F13140822CC9A8F00A33E0B /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		153B2A342044D15381771027 /* Pods-RationBalancingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RationBalancingTests.debug.xcconfig"; path = "Target Support Files/Pods-RationBalancingTests/Pods-RationBalancingTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2C2C96CD38D56BCEC97E2A9A /* Pods-RationBalancing-RationBalancingUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RationBalancing-RationBalancingUITests.release.xcconfig"; path = "Target Support Files/Pods-RationBalancing-RationBalancingUITests/Pods-RationBalancing-RationBalancingUITests.release.xcconfig"; sourceTree = "<group>"; };
+		3F0BAA61233D13C30052523C /* AdvancedSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedSearchViewController.swift; sourceTree = "<group>"; };
+		3F0BAA63233D77560052523C /* IngredientsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientsTableViewCell.swift; sourceTree = "<group>"; };
+		3F0BAA6B2342453C0052523C /* AddIngredientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddIngredientViewController.swift; sourceTree = "<group>"; };
+		3F0BAA6D2342718D0052523C /* ing.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ing.json; sourceTree = "<group>"; };
+		3F0BAA6F234271970052523C /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = index.html; path = ../../index.html; sourceTree = "<group>"; };
+		3F13140A22CCA17400A33E0B /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		3F13140C22CD08C900A33E0B /* ResultTableViewCellDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultTableViewCellDetails.swift; sourceTree = "<group>"; };
+		3F1AD180232EA49F008CE5AD /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		3F28F20422C3D8DB00BCA34B /* EditNutrientsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditNutrientsTableViewCell.swift; sourceTree = "<group>"; };
 		3F28F20822C4446800BCA34B /* EditNutrientsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditNutrientsTableViewController.swift; sourceTree = "<group>"; };
+		3F59FDEC234E702F008574F5 /* Ingredients.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredients.swift; sourceTree = "<group>"; };
 		3F5BA1AC22BBDC9C004CA69A /* RationBalancing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RationBalancing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F5BA1AF22BBDC9C004CA69A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F5BA1B122BBDC9C004CA69A /* CattleCategoryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CattleCategoryController.swift; sourceTree = "<group>"; };
@@ -62,7 +86,17 @@
 		3F5BA1E122BBDFB3004CA69A /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		3F65F55A22BF3E9A0053FE0B /* RationTableCellDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RationTableCellDetails.swift; sourceTree = "<group>"; };
 		3F65F55C22C12FE70053FE0B /* FoodStuffModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodStuffModel.swift; sourceTree = "<group>"; };
+		3FADED572361144200F8B80F /* InformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationViewController.swift; sourceTree = "<group>"; };
 		3FBD647022BF3900000F004B /* HelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
+		3FD9BEC92352ACDD004E4A49 /* NutrientsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutrientsList.swift; sourceTree = "<group>"; };
+		3FE108C62398BB5D00456005 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		4DF76B23FCD05D97A8FF29A6 /* Pods_RationBalancing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RationBalancing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		640E38A2200A3976A6FFC46F /* Pods-RationBalancing.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RationBalancing.release.xcconfig"; path = "Target Support Files/Pods-RationBalancing/Pods-RationBalancing.release.xcconfig"; sourceTree = "<group>"; };
+		9BAB253A90513419F049A6D9 /* Pods_RationBalancing_RationBalancingUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RationBalancing_RationBalancingUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A73031D1CB768A46A93BB487 /* Pods-RationBalancingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RationBalancingTests.release.xcconfig"; path = "Target Support Files/Pods-RationBalancingTests/Pods-RationBalancingTests.release.xcconfig"; sourceTree = "<group>"; };
+		ACCD7D0CE2B70A66E4E9255B /* Pods-RationBalancing.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RationBalancing.debug.xcconfig"; path = "Target Support Files/Pods-RationBalancing/Pods-RationBalancing.debug.xcconfig"; sourceTree = "<group>"; };
+		C750BE0746D983F9CC713C5C /* Pods-RationBalancing-RationBalancingUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RationBalancing-RationBalancingUITests.debug.xcconfig"; path = "Target Support Files/Pods-RationBalancing-RationBalancingUITests/Pods-RationBalancing-RationBalancingUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D7B37C81807D71C3F3465F1F /* Pods_RationBalancingTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RationBalancingTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9378A972B681CC358ABD6839 /* Pods_RationBalancing.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06BF83D202BAA3E8D612571D /* Pods_RationBalancingTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,12 +120,70 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				646A0D409EAC180E84C52062 /* Pods_RationBalancing_RationBalancingUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F0BAA65233D93F10052523C /* CattleCategory */ = {
+			isa = PBXGroup;
+			children = (
+				3F5BA1B122BBDC9C004CA69A /* CattleCategoryController.swift */,
+			);
+			path = CattleCategory;
+			sourceTree = "<group>";
+		};
+		3F0BAA66233D94290052523C /* Nutrients Values */ = {
+			isa = PBXGroup;
+			children = (
+				3F5BA1DF22BBDF69004CA69A /* MasterTableViewController.swift */,
+				3F5BA1E122BBDFB3004CA69A /* DetailViewController.swift */,
+				3F0BAA61233D13C30052523C /* AdvancedSearchViewController.swift */,
+				3F13140A22CCA17400A33E0B /* ResultViewController.swift */,
+				3FADED572361144200F8B80F /* InformationViewController.swift */,
+			);
+			path = "Nutrients Values";
+			sourceTree = "<group>";
+		};
+		3F0BAA67233D94870052523C /* Edit Nutrients */ = {
+			isa = PBXGroup;
+			children = (
+				3F28F20822C4446800BCA34B /* EditNutrientsTableViewController.swift */,
+			);
+			path = "Edit Nutrients";
+			sourceTree = "<group>";
+		};
+		3F0BAA68233D949A0052523C /* Help */ = {
+			isa = PBXGroup;
+			children = (
+				3FBD647022BF3900000F004B /* HelpViewController.swift */,
+			);
+			path = Help;
+			sourceTree = "<group>";
+		};
+		3F0BAA69233D94AC0052523C /* Table View Cells */ = {
+			isa = PBXGroup;
+			children = (
+				3F28F20422C3D8DB00BCA34B /* EditNutrientsTableViewCell.swift */,
+				3F65F55A22BF3E9A0053FE0B /* RationTableCellDetails.swift */,
+				3F13140C22CD08C900A33E0B /* ResultTableViewCellDetails.swift */,
+				3F0BAA63233D77560052523C /* IngredientsTableViewCell.swift */,
+			);
+			path = "Table View Cells";
+			sourceTree = "<group>";
+		};
+		3F0BAA6A233D94DE0052523C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3F65F55C22C12FE70053FE0B /* FoodStuffModel.swift */,
+				3F59FDEC234E702F008574F5 /* Ingredients.swift */,
+				3FD9BEC92352ACDD004E4A49 /* NutrientsList.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		3F5BA1A322BBDC9C004CA69A = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +191,8 @@
 				3F5BA1C522BBDC9F004CA69A /* RationBalancingTests */,
 				3F5BA1D022BBDC9F004CA69A /* RationBalancingUITests */,
 				3F5BA1AD22BBDC9C004CA69A /* Products */,
+				B94C799F1A63DBAB7219C9A9 /* Pods */,
+				B23BCF542841736EB9994819 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -113,20 +209,22 @@
 		3F5BA1AE22BBDC9C004CA69A /* RationBalancing */ = {
 			isa = PBXGroup;
 			children = (
+				3F0BAA6D2342718D0052523C /* ing.json */,
+				3F0BAA6F234271970052523C /* index.html */,
 				3F5BA1AF22BBDC9C004CA69A /* AppDelegate.swift */,
-				3F65F55C22C12FE70053FE0B /* FoodStuffModel.swift */,
 				3F5BA1B522BBDC9C004CA69A /* Main.storyboard */,
+				3F0BAA6A233D94DE0052523C /* Model */,
+				3F0BAA65233D93F10052523C /* CattleCategory */,
+				3F0BAA67233D94870052523C /* Edit Nutrients */,
+				3F0BAA66233D94290052523C /* Nutrients Values */,
+				3FE108C52398BACE00456005 /* AddIngredients */,
+				3F0BAA68233D949A0052523C /* Help */,
+				3F0BAA69233D94AC0052523C /* Table View Cells */,
 				3F5BA1B822BBDC9E004CA69A /* Assets.xcassets */,
 				3F5BA1BA22BBDC9E004CA69A /* LaunchScreen.storyboard */,
 				3F5BA1BD22BBDC9E004CA69A /* Info.plist */,
-				3F5BA1B122BBDC9C004CA69A /* CattleCategoryController.swift */,
-				3F28F20822C4446800BCA34B /* EditNutrientsTableViewController.swift */,
-				3F5BA1DF22BBDF69004CA69A /* MasterTableViewController.swift */,
-				3F5BA1E122BBDFB3004CA69A /* DetailViewController.swift */,
-				3FBD647022BF3900000F004B /* HelpViewController.swift */,
-				3F65F55A22BF3E9A0053FE0B /* RationTableCellDetails.swift */,
-				3F28F20422C3D8DB00BCA34B /* EditNutrientsTableViewCell.swift */,
-				3F13140822CC9A8F00A33E0B /* ResultViewController.swift */,
+				3F1AD17F232EA49F008CE5AD /* Model.xcdatamodeld */,
+				3FE108C62398BB5D00456005 /* CustomButton.swift */,
 			);
 			path = RationBalancing;
 			sourceTree = "<group>";
@@ -149,6 +247,37 @@
 			path = RationBalancingUITests;
 			sourceTree = "<group>";
 		};
+		3FE108C52398BACE00456005 /* AddIngredients */ = {
+			isa = PBXGroup;
+			children = (
+				3F0BAA6B2342453C0052523C /* AddIngredientViewController.swift */,
+			);
+			path = AddIngredients;
+			sourceTree = "<group>";
+		};
+		B23BCF542841736EB9994819 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4DF76B23FCD05D97A8FF29A6 /* Pods_RationBalancing.framework */,
+				9BAB253A90513419F049A6D9 /* Pods_RationBalancing_RationBalancingUITests.framework */,
+				D7B37C81807D71C3F3465F1F /* Pods_RationBalancingTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B94C799F1A63DBAB7219C9A9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ACCD7D0CE2B70A66E4E9255B /* Pods-RationBalancing.debug.xcconfig */,
+				640E38A2200A3976A6FFC46F /* Pods-RationBalancing.release.xcconfig */,
+				C750BE0746D983F9CC713C5C /* Pods-RationBalancing-RationBalancingUITests.debug.xcconfig */,
+				2C2C96CD38D56BCEC97E2A9A /* Pods-RationBalancing-RationBalancingUITests.release.xcconfig */,
+				153B2A342044D15381771027 /* Pods-RationBalancingTests.debug.xcconfig */,
+				A73031D1CB768A46A93BB487 /* Pods-RationBalancingTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -156,9 +285,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3F5BA1D622BBDC9F004CA69A /* Build configuration list for PBXNativeTarget "RationBalancing" */;
 			buildPhases = (
+				25DAE6CCF47D58AF316E9902 /* [CP] Check Pods Manifest.lock */,
 				3F5BA1A822BBDC9C004CA69A /* Sources */,
 				3F5BA1A922BBDC9C004CA69A /* Frameworks */,
 				3F5BA1AA22BBDC9C004CA69A /* Resources */,
+				EE3DF5A933976BF5148A7EC0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -173,6 +304,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3F5BA1D922BBDC9F004CA69A /* Build configuration list for PBXNativeTarget "RationBalancingTests" */;
 			buildPhases = (
+				0E7A703D1375AA3CFE8D480A /* [CP] Check Pods Manifest.lock */,
 				3F5BA1BE22BBDC9F004CA69A /* Sources */,
 				3F5BA1BF22BBDC9F004CA69A /* Frameworks */,
 				3F5BA1C022BBDC9F004CA69A /* Resources */,
@@ -191,9 +323,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3F5BA1DC22BBDC9F004CA69A /* Build configuration list for PBXNativeTarget "RationBalancingUITests" */;
 			buildPhases = (
+				93D23D11CEB6B781783ACE00 /* [CP] Check Pods Manifest.lock */,
 				3F5BA1C922BBDC9F004CA69A /* Sources */,
 				3F5BA1CA22BBDC9F004CA69A /* Frameworks */,
 				3F5BA1CB22BBDC9F004CA69A /* Resources */,
+				617FAB03BBB9466AB9A5493A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -253,8 +387,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F0BAA70234271970052523C /* index.html in Resources */,
 				3F5BA1BC22BBDC9E004CA69A /* LaunchScreen.storyboard in Resources */,
 				3F5BA1B922BBDC9E004CA69A /* Assets.xcassets in Resources */,
+				3F0BAA6E2342718D0052523C /* ing.json in Resources */,
 				3F5BA1B722BBDC9C004CA69A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,21 +411,133 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0E7A703D1375AA3CFE8D480A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RationBalancingTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		25DAE6CCF47D58AF316E9902 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RationBalancing-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		617FAB03BBB9466AB9A5493A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RationBalancing-RationBalancingUITests/Pods-RationBalancing-RationBalancingUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RationBalancing-RationBalancingUITests/Pods-RationBalancing-RationBalancingUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RationBalancing-RationBalancingUITests/Pods-RationBalancing-RationBalancingUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		93D23D11CEB6B781783ACE00 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RationBalancing-RationBalancingUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE3DF5A933976BF5148A7EC0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RationBalancing/Pods-RationBalancing-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RationBalancing/Pods-RationBalancing-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RationBalancing/Pods-RationBalancing-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3F5BA1A822BBDC9C004CA69A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F0BAA64233D77560052523C /* IngredientsTableViewCell.swift in Sources */,
+				3FE108C72398BB5D00456005 /* CustomButton.swift in Sources */,
+				3FADED582361144200F8B80F /* InformationViewController.swift in Sources */,
 				3F28F20522C3D8DB00BCA34B /* EditNutrientsTableViewCell.swift in Sources */,
 				3F65F55D22C12FE70053FE0B /* FoodStuffModel.swift in Sources */,
+				3F13140D22CD08C900A33E0B /* ResultTableViewCellDetails.swift in Sources */,
+				3F0BAA6C2342453C0052523C /* AddIngredientViewController.swift in Sources */,
 				3FBD647122BF3900000F004B /* HelpViewController.swift in Sources */,
 				3F5BA1E022BBDF69004CA69A /* MasterTableViewController.swift in Sources */,
+				3F0BAA62233D13C30052523C /* AdvancedSearchViewController.swift in Sources */,
+				3F59FDED234E702F008574F5 /* Ingredients.swift in Sources */,
 				3F5BA1E222BBDFB3004CA69A /* DetailViewController.swift in Sources */,
-				3F13140922CC9A8F00A33E0B /* ResultViewController.swift in Sources */,
 				3F65F55B22BF3E9A0053FE0B /* RationTableCellDetails.swift in Sources */,
 				3F5BA1B022BBDC9C004CA69A /* AppDelegate.swift in Sources */,
 				3F5BA1B222BBDC9C004CA69A /* CattleCategoryController.swift in Sources */,
 				3F28F20922C4446800BCA34B /* EditNutrientsTableViewController.swift in Sources */,
+				3F1AD181232EA49F008CE5AD /* Model.xcdatamodeld in Sources */,
+				3FD9BECA2352ACDD004E4A49 /* NutrientsList.swift in Sources */,
+				3F13140B22CCA17400A33E0B /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -462,12 +710,14 @@
 		};
 		3F5BA1D722BBDC9F004CA69A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACCD7D0CE2B70A66E4E9255B /* Pods-RationBalancing.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LGKG8TXK55;
 				INFOPLIST_FILE = RationBalancing/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -475,6 +725,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.nwmsu.RationBalancing;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Pods/Backendless/SDK/ios/backendless/include/Backendless-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -483,12 +734,14 @@
 		};
 		3F5BA1D822BBDC9F004CA69A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 640E38A2200A3976A6FFC46F /* Pods-RationBalancing.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LGKG8TXK55;
 				INFOPLIST_FILE = RationBalancing/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -496,6 +749,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.nwmsu.RationBalancing;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Pods/Backendless/SDK/ios/backendless/include/Backendless-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -504,6 +758,7 @@
 		};
 		3F5BA1DA22BBDC9F004CA69A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 153B2A342044D15381771027 /* Pods-RationBalancingTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -524,6 +779,7 @@
 		};
 		3F5BA1DB22BBDC9F004CA69A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A73031D1CB768A46A93BB487 /* Pods-RationBalancingTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -544,6 +800,7 @@
 		};
 		3F5BA1DD22BBDC9F004CA69A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C750BE0746D983F9CC713C5C /* Pods-RationBalancing-RationBalancingUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -563,6 +820,7 @@
 		};
 		3F5BA1DE22BBDC9F004CA69A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C2C96CD38D56BCEC97E2A9A /* Pods-RationBalancing-RationBalancingUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -620,6 +878,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3F1AD17F232EA49F008CE5AD /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3F1AD180232EA49F008CE5AD /* Model.xcdatamodel */,
+			);
+			currentVersion = 3F1AD180232EA49F008CE5AD /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 3F5BA1A422BBDC9C004CA69A /* Project object */;
 }

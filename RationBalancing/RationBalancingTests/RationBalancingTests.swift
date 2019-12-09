@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import RationBalancing
+//@testable import RationBalancing
 
 class RationBalancingTests: XCTestCase {
 
