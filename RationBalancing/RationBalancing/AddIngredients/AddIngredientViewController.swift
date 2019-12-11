@@ -149,6 +149,12 @@ class AddIngredientViewController: UIViewController, UITextFieldDelegate {
             Ingreed.shared.saveIngredient(ingredient: ing)
             createAddIngredientsPage()
             AddIngredientViewController.count = AddIngredientViewController.count + 1
+                
+                let splitViewController = self.tabBarController?.viewControllers![2] as? UISplitViewController
+                let navigationController = splitViewController!.viewControllers.first as? UINavigationController
+                let master = navigationController?.viewControllers.first as! MasterTableViewController
+                 master.reloadMasterTableViewData()
+                
             self.tabBarController?.selectedIndex = 2
             print("Saved Sucessfully")
             

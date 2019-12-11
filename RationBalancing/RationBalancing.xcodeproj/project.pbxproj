@@ -90,6 +90,7 @@
 		3FBD647022BF3900000F004B /* HelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
 		3FD9BEC92352ACDD004E4A49 /* NutrientsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutrientsList.swift; sourceTree = "<group>"; };
 		3FE108C62398BB5D00456005 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		3FE108C823A03A8800456005 /* RationBalancing.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RationBalancing.entitlements; sourceTree = "<group>"; };
 		4DF76B23FCD05D97A8FF29A6 /* Pods_RationBalancing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RationBalancing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		640E38A2200A3976A6FFC46F /* Pods-RationBalancing.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RationBalancing.release.xcconfig"; path = "Target Support Files/Pods-RationBalancing/Pods-RationBalancing.release.xcconfig"; sourceTree = "<group>"; };
 		9BAB253A90513419F049A6D9 /* Pods_RationBalancing_RationBalancingUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RationBalancing_RationBalancingUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -209,6 +210,7 @@
 		3F5BA1AE22BBDC9C004CA69A /* RationBalancing */ = {
 			isa = PBXGroup;
 			children = (
+				3FE108C823A03A8800456005 /* RationBalancing.entitlements */,
 				3F0BAA6D2342718D0052523C /* ing.json */,
 				3F0BAA6F234271970052523C /* index.html */,
 				3F5BA1AF22BBDC9C004CA69A /* AppDelegate.swift */,
@@ -351,6 +353,11 @@
 				TargetAttributes = {
 					3F5BA1AB22BBDC9C004CA69A = {
 						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 					3F5BA1C122BBDC9F004CA69A = {
 						CreatedOnToolsVersion = 10.0;

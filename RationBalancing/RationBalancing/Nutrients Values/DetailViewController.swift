@@ -16,7 +16,6 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
     @IBOutlet weak var webView: UIWebView!
     
     var secondTab : EditNutrientsTableViewController!
-    var thirdTab:MasterTableViewController!
     //This gives the selected ingridients present from the master view controller
     static var selectedIngredients:[String] = []
     //This will contains the all the total list of ingridients present in the backendless.
@@ -69,6 +68,8 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     var count = 0
     
+    var ifDeleted:Int = 0
+    
     @IBOutlet weak var tableView: UITableView!
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -104,14 +105,21 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     // this method handles row deletion
-    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        
-        if editingStyle == .delete {
-            DetailViewController.selectedIngredients.remove(at: indexPath.row)
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        }
-        tableView.reloadData()
-    }
+//    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+//
+//        let splitViewController = self.tabBarController?.viewControllers![2] as? UISplitViewController
+//        let navigationController = splitViewController!.viewControllers.first as? UINavigationController
+//        let master = navigationController?.viewControllers.first as! MasterTableViewController
+//        print(indexPath.row)
+//        if editingStyle == .delete {
+//            DetailViewController.selectedIngredients.remove(at: indexPath.row)
+//            sortedIngredientList.remove(at: indexPath.row)
+//            tableView.deleteRows(at: [indexPath], with: .fade)
+//        }
+//        master.reloadMasterTableViewData()
+//        viewDidLoad()
+//    }
+    
     override func viewDidLoad() {
         
         super.viewDidLoad()
@@ -127,7 +135,7 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
             
             ingredientList = Ingreed.shared.allIngredients
             //print(ingredientList.count)
-            eqvalue = ""
+            //eqvalue = ""
             coefficients = []
             lhsEquation = []
             loadingTheLocalValues()
@@ -177,7 +185,7 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
         lhsEquation = []
         generateEquation1 = ""
         generateEq1()
-        eqvalue = ""
+        //eqvalue = ""
         self.cost = []
     }
     
@@ -300,8 +308,9 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     
-    var eqvalue = ""
+    
     func generateCostEquation(){
+        var eqvalue = ""
         //print("The value of coefficients",coefficients)
         let count1 = cost.count - 1
         var count3 = 0
@@ -311,19 +320,19 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
                     if count3<=count1{
                         //print("count1 value is:",count1)
                         //print("count3 value is:",count3)
-                        if self.eqvalue == ""{
-                            self.eqvalue = "\(self.cost[count3])\(i)"
+                        if eqvalue == ""{
+                            eqvalue = "\(self.cost[count3])\(i)"
                             count3 = count3+1
                         }
                         else{
                             //print("Inside else count3 is:",count3)
-                            self.eqvalue = self.eqvalue + "+\(self.cost[count3])\(i)"
+                            eqvalue = eqvalue + "+\(self.cost[count3])\(i)"
                             count3 = count3+1
                         }
                     }
                 }
                 if self.costEquation == ""{
-                    self.costEquation = self.eqvalue
+                    self.costEquation = eqvalue
                 }
             }
     }
@@ -453,8 +462,10 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
         outputResult = []
         cost = []
         lbsInRation = []
+        count = 0
         //print("Inside the calculate ration")
         for i in 0 ..< self.tableView.numberOfRows(inSection: 0){
+            print("rows in detail table view",i)
             let cell: RationTableCellDetails = self.tableView.cellForRow(at: IndexPath(row: i, section: 0)) as! RationTableCellDetails
             if cell.costTF.text! == ""{
                 count = count + 1;
@@ -466,18 +477,20 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
                 self.lbsInRation.append(0.0)
             }
             if let costValue = Double(cell.costTF.text!){
-                    count = 0
+                    //count = 0
                     self.cellValues.append( cell.percentageTF.text!)
                     self.cost.append("\(costValue)")
                     //print("Maximize p=(1/2)x+3y+z+4w subject to\nx+y+z+w<=40\n2x+y-z-w>=10\nw-y>=10")
             }
             else{
-                let ac = UIAlertController(title:"Please enter Double values for Cost", message:nil, preferredStyle: .alert)
+                count = count + 1;
+                let ac = UIAlertController(title:"Please enter only decimal values for Cost", message:nil, preferredStyle: .alert)
                 let proceedAction = UIAlertAction(title:"OK", style: .default)
                 ac.addAction(proceedAction)
                 present(ac, animated:true)
             }
             //print("the lbs in ration is:",lbsInRation)
+            print(count)
         }
         
         if count>0 {
@@ -494,9 +507,16 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
             ac.addAction(proceedAction)
             present(ac, animated:true)
         }
-        
-        else if DetailViewController.selectedIngredients.count >= 2{
+        else if DetailViewController.selectedIngredients.count<=1{
+            calculateButton.isEnabled = true
+                        let ac = UIAlertController(title:"Please select atleast two ingredients to make ration balancing calculation", message:nil, preferredStyle: .alert)
+                        let proceedAction = UIAlertAction(title:"OK", style: .default)
+                        ac.addAction(proceedAction)
+                        present(ac, animated:true)
+        }
+        else{
             calculateButton.isEnabled = false
+            //viewDidLoad()
             generateCostEquation()
             finalEquation = ""
             generateEquation()
@@ -506,12 +526,12 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
 //            let nextViewController = self.storyboard!.instantiateViewController(withIdentifier: "resultPage") as! ResultViewController
 //           self.navigationController?.pushViewController(nextViewController, animated: true)
         }
-        else{
-            calculateButton.isEnabled = true
-            let ac = UIAlertController(title:"Please select atleast two ingredients to make ration balancing calculation", message:nil, preferredStyle: .alert)
-            let proceedAction = UIAlertAction(title:"OK", style: .default)
-            ac.addAction(proceedAction)
-            present(ac, animated:true)
-        }
+//        if {
+//            calculateButton.isEnabled = true
+//            let ac = UIAlertController(title:"Please select atleast two ingredients to make ration balancing calculation", message:nil, preferredStyle: .alert)
+//            let proceedAction = UIAlertAction(title:"OK", style: .default)
+//            ac.addAction(proceedAction)
+//            present(ac, animated:true)
+//        }
     }
 }

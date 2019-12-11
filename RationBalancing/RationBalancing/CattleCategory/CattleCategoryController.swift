@@ -53,7 +53,7 @@ class CattleCategoryController: UIViewController, UIPickerViewDelegate, UIPicker
     //This is customButton used for the calculate
     var bottomCustomButton = CustomButton()
     
-    var cattle = ["Select Cattle Weight","450-550 lbs","550-650 lbs","650-750 lbs","750 Above"]
+    var cattle = ["Select Cattle Weight","450-550 lbs","550-650 lbs","650-750 lbs"]
     var growth = ["Select Cattle Category","1.1 kgs","2.2 kgs","3.3 kgs","4.4 kgs"]
     
     var cattleWeightSelected : String = "Select Cattle Weight"
